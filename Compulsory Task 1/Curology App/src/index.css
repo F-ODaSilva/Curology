@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
 body{
-  background-color: lightgray;
+  overflow-x: hidden;
+}
+
+/* Navbar Styling */
+nav{
+   .brand-logo{
+     height: 35px!important;
+     width: 35px!important;
+   }
+   .brand-name{
+    font-family: "Coiny";
+    color:#1d1d44;
+    font-weight: 600;
+   }
+   
+   a.font-light{
+    font-family: "Poiret One";
+    font-weight: 300;
+   }
+
+   a.font-light:hover{
+    font-weight: 800!important;
+    font-size: 17px!important;
+   }
 }
