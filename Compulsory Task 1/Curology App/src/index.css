@@ -2,30 +2,51 @@
 @tailwind components;
 @tailwind utilities;
 
-
-body{
+body {
   overflow-x: hidden;
 }
 
 /* Navbar Styling */
-nav{
-   .brand-logo{
-     height: 35px!important;
-     width: 35px!important;
-   }
-   .brand-name{
+nav {
+  margin-bottom: 1rem;
+  .brand-logo {
+    height: 35px !important;
+    width: 35px !important;
+  }
+  .brand-name {
     font-family: "Coiny";
-    color:#1d1d44;
+    color: #1d1d44;
     font-weight: 600;
-   }
-   
-   a.font-light{
-    font-family: "Poiret One";
-    font-weight: 300;
-   }
+  }
 
-   a.font-light:hover{
-    font-weight: 800!important;
-    font-size: 17px!important;
-   }
+  a.font-medium {
+    font-family: "Poiret One";
+    font-weight: 600 !important;
+  }
+
+  a.font-medium:hover {
+    font-weight: 700 !important;
+    font-size: 17px !important;
+    color: #6F5CFF;
+  }
+}
+
+#hero {
+  .left-side {
+    h1 {
+      font-family: "Coiny";
+      font-weight: 400;
+      margin-top: 2rem;
+    }
+    h2 {
+      font-size: 18px;
+      margin-bottom: 1rem;
+      font-weight: 400;
+    }
+    h3 {
+      font-size: 20px !important;
+      padding-left: 0;
+      font-family: "Coiny";
+    }
+  }
 }
