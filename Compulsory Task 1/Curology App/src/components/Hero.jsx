@@ -17,13 +17,19 @@ const Hero = () => {
      {/* Background Circle Gradient */}
      <GradientBackRPY />
       {/* Left Side: 35% of the screen */}
-      <div className="left-side w-1/3 p-8 flex flex-col z-10">
+      <div className="left-side w-1/3 p-8 flex flex-col -mt-4 z-10">
+        {/* 
+        The lines above in this tailwindcss classes the w-1/3 is giving one third of the screen width to the current div 
+        found this with the help of https://tailwindcss.com/docs/border-width
+        */}
         <h1 className="text-left text-5xl font-bold mb-1">
         Timeless Skin<span className="text-red-500">.</span> Lush Hair<span className="text-yellow-300">.</span> Beautifully You<span className="text-white">.</span>
         </h1>
         <h2 className="text-gray-700 text-xl text-justify mb-5">
         Transform your skincare and hair care routine with advanced solutions for anti-aging, acne, dark spots, and hair growth. Because your confidence deserves the best care
         </h2>
+        
+        {/* Sign In  */}
         <h3 className="text-xl font-bold mb-2 ps-2 text-gray-900 text-left">Start Your Journey</h3>
         <input
           type="text"
@@ -42,7 +48,7 @@ const Hero = () => {
 
       {/* Right Side: 65% of the screen (Bento grid) */}
       <div className="w-2/3 p-8 z-1">
-        <div className="grid grid-cols-4 gap-3 mt-8 relative">
+        <div className="grid grid-cols-4 gap-3 mt-5 relative">
           {/* First Row: 4 cards */}
           <div className="bg-gray-300 h-40 rounded-md transform transition-all duration-500 rotate-2 hover:rotate-6 scale-110 hover:scale-115 tilt-card z-20 border-4 border-yellow-300">
             <img src={cardFour} alt="" className="object-cover w-full h-full rounded-sm bg-indigo-300" />
@@ -57,7 +63,7 @@ const Hero = () => {
             <img src={cardSeven} alt="" className="object-cover w-full h-full rounded-sm" />
           </div>
 
-          {/* Second Row: Large vertical card and 2 smaller cards */}
+          {/* Second Row: 2 Large vertical cards and 2 smaller cards */}
           <div className="col-span-1 row-span-2 bg-gray-300 h-full rounded-md transform transition-all duration-500 -rotate-6 hover:rotate-6 scale-110 tilt-card z-auto hover:z-50 border-4 border-pink-700">
           <img src={cardOne} alt="" className="object-cover w-full h-full bg-pink-400" />
           </div>
