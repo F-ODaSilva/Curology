@@ -38,10 +38,10 @@ const Navbar = () => {
 
               {/* Sign In & Log In Buttons */}
               <div className="flex items-center space-x-4 z-50">
-                <button className="bg-gradient-to-r from-sky-600 to-indigo-800 hover:bg-gradient-to-r hover:from-sky-500 hover:to-indigo-700 px-4 py-1 rounded text-slate-200 hover:text-white text-sm font-medium  ">
+                <button className="log-in bg-gradient-to-r from-sky-600 to-indigo-800 hover:bg-gradient-to-r hover:from-sky-500 hover:to-indigo-700 px-4 py-1 rounded text-slate-200 hover:text-white text-sm font-medium  ">
                   Log In
                 </button>
-                <button className="bg-gradient-to-r from-sky-600 to-indigo-800 hover:bg-gradient-to-r hover:from-sky-500 hover:to-indigo-700 px-4 py-1 rounded text-slate-200 hover:text-white text-sm font-medium">
+                <button className="sig-in bg-gradient-to-r from-sky-600 to-indigo-800 hover:bg-gradient-to-r hover:from-sky-500 hover:to-indigo-700 px-4 py-1 rounded text-slate-200 hover:text-white text-sm font-medium">
                   Sign In
                 </button>
               </div>
