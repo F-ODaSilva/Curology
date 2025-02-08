@@ -47,7 +47,7 @@ const Hero = () => {
       </div>
 
       {/* Right Side: 65% of the screen (Bento grid) */}
-      <div className="w-2/3 p-8 z-1">
+      <div className="right-side w-2/3 p-8 z-10">
         <div className="grid grid-cols-4 gap-3 mt-5 relative">
           {/* First Row: 4 cards */}
           <div className="bg-gray-300 h-40 rounded-md transform transition-all duration-500 rotate-2 hover:rotate-6 scale-110 hover:scale-115 tilt-card z-20 border-4 border-yellow-300">
