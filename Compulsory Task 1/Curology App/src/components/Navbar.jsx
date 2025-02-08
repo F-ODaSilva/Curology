@@ -25,13 +25,13 @@ const Navbar = () => {
                       Home
                     </a>
 
-                    <a href="#" className="font-medium  hover:overline  text-gray-500 hover:text-blue-500 tracking-widest transition-all duration-150 ease-in-out font-sans font-sm ">
+                    <a href="#" className="font-medium  hover:overline  text-gray-500 hover:text-blue-500 tracking-widest transition-all duration-150 ease-in-out font-sm ">
                       About
                     </a>
-                    <a href="#" className="font-medium  hover:overline  text-gray-500 hover:text-blue-500 tracking-widest transition-all duration-150 ease-in-out font-sans font-sm ">
+                    <a href="#" className="font-medium  hover:overline  text-gray-500 hover:text-blue-500 tracking-widest transition-all duration-150 ease-in-out font-sm ">
                       Products
                     </a>
-                    <a href="#" className="font-medium  hover:overline  text-gray-500 hover:text-blue-500 tracking-widest transition-all duration-150 ease-in-out font-sans font-sm ">
+                    <a href="#" className="font-medium  hover:overline  text-gray-500 hover:text-blue-500 tracking-widest transition-all duration-150 ease-in-out font-sm ">
                       Testimonials
                     </a>
               </div>
@@ -45,6 +45,7 @@ const Navbar = () => {
                   Sign In
                 </button>
               </div>
+              
             </div>
           </nav>
         </>
