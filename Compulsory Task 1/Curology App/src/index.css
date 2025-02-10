@@ -97,13 +97,13 @@ nav {
 }
 
 /* RESPOSSIVENESS */
-/* MOBILE */
-/* NAVBAR */
 /* IPOD IPHONE  */
 @media(300px <= width <= 345px) {
+  /* Navbar */
   nav{
-    margin-bottom: 0;
+      margin-bottom: 0;
       padding-bottom: 0!important;
+      padding-top: 5px!important;
     .max-w-3lg{
       .flex.items-center.z-50{
         /* Brand Logo */
@@ -124,7 +124,7 @@ nav {
         justify-content: space-evenly;
         margin: 5px;
         a.font-medium{
-          padding-top: 5px;
+          padding-top: 0;
           font-size: 9px!important;
         }
         a.font-medium:hover{
@@ -147,9 +147,170 @@ nav {
       }
     }
   }
+  /* Hero Section */
+  #hero{
+    #gradientTwo{
+      .gradient-background{
+        top: 4rem!important;
+        width: 500px;
+        height: 500px;
+      }
+    }
+    /* CopyWrite */
+    .left-side{
+      position: absolute;
+      margin-top: 12rem;
+      /* Title */
+      h1.text-left{
+        margin-right: -12rem;
+        padding-left: 35px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 22px;
+        .text-red-500{
+          color: rgb(74, 74, 211);
+        }
+      }
+      /* SubTitle */
+      h2.text-xl{
+        margin-right: -13rem;
+        margin-bottom: 5px;
+        font-size: 10px;
+        line-height: normal;
+        text-align: center;
+        padding-left: 1rem;
+        word-spacing: 0px;
+        color: rgb(237, 207, 207);
+      }
+      /* SubHeading */
+      h3.text-xl{
+        margin-right: -30rem;
+        padding-left: 3.5rem;
+        margin-bottom: 5px; 
+        font-size: 15px!important;
+      }
+      /* Form */
+      input.p-3{
+        margin-right: -12rem;
+        margin-left: 2rem;
+        border: solid 2px #6F5CFF;
+        margin-bottom: 8px;
+        font-size: 10px;
+        padding: 3px;
+      } 
+      /* Button */
+      button.py-2{
+        position: relative;
+        left: 6rem;
+        padding: 6px 12px;
+        margin-right: -2rem;
+        font-size: 10px;
+      }
+    }
+    /* Grid Side */
+    .right-side{
+      padding-top: 0px;
+      margin-top: -0.8rem!important;
+      .grid.grid-cols-4{
+        /* First Box */
+        .bg-gray-300.border-yellow-300{
+          width: 95px;
+          height: 80px;
+          position: relative;
+          left: -1.4rem;
+        }
+        .bg-gray-300.border-yellow-300:hover{
+          z-index: 50;
+          rotate: 4deg;
+        }
+        /* Second Box */
+        .bg-gray-300.border-emerald-300{
+          z-index: 20;
+          width: 80px;
+          height: 95px;
+          position: relative;
+          left: 25px; 
+          img.object-cover.w-full.h-full.rounded-sm{
+            object-position: 250% 30%!important;
+          }
+        }
+        .bg-gray-300.border-emerald-300:hover{
+          z-index: 50;
+        }
+        /* Third Box */
+        .bg-gray-300.border-red-300{
+          z-index: 40;
+          position: relative;
+          width: 100px;
+          height: 90px;
+          left: 3rem;
+        }
+        .bg-gray-300.border-red-300:hover{
+          z-index: 70;
+        }
+        /* Fourth Box */
+        .bg-gray-300.border-purple-400{
+          z-index: 47;
+          position: relative;
+          width: 90px;
+          height: 80px;
+          left: 5rem;
+        }
+        /* Fifth Box */
+        .bg-gray-300.border-pink-700{
+          z-index: 20;
+          position: relative;
+          height: 140px;
+          width: 110px;
+          left: -1.3rem;
+          top: -1.5rem;
+        }
+        .bg-gray-300.border-pink-700:hover{
+          z-index: 70;
+        }
+        /* Sixth Box */
+        .bg-gray-300.border-cyan-500{
+          z-index: 25;
+          position: relative;
+          width: 135px;
+          height: 95px;
+          top: -1.5rem;
+          left: 1rem;
+        }
+        .bg-gray-300.border-cyan-500:hover{
+          z-index: 60;
+          transform: scale(1.2)
+        }
+        /* Seventh Box */
+        .bg-gray-300.border-yellow-600{
+          z-index: 10;
+          position: relative;
+          left: 4rem;
+          width: 110px;
+          height: 160px;
+          top: -1.8rem;
+          rotate: 2deg;
+        }
+        .bg-gray-300.border-yellow-600:hover{
+          z-index: 75;
+        }
+        /* Eight Box */
+        .bg-gray-300.border-purple-600{
+          z-index: 20;
+          position: relative;
+          top: -4rem;
+          left: 1rem;
+          height: 80px;
+          width: 150px;
+          z-index: 45;
+        }
+      }
+    }    
+  }
 }
 /* IPHONE X - 12 Mini */
-@media(350px <= width <= 415px){
+@media(350px <= width <= 389px){
+  /* Navbar Section */
   nav{
     margin-bottom: 0;
       padding-bottom: 0!important;
@@ -194,11 +355,381 @@ nav {
         }
       }
     }
+  }
+  /* Hero Section */
+  #hero{
+    #gradientTwo{
+      .gradient-background{
+        top: 5.5rem!important;
+        width: 600px;
+        height: 850px;
+      }
+    }
+    /* CopyWrite */
+    .left-side{
+      position: absolute;
+      margin-top: 17.8rem;
+      /* Title */
+      h1.text-left{
+        margin-right: -16rem;
+        padding-left: 3px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 35px;
+        .text-red-500{
+          color: rgb(74, 74, 211);
+        }
+      }
+      /* SubTitle */
+      h2.text-xl{
+        margin-right: -14rem;
+        margin-bottom: 15px;
+        font-size: 15px!important;
+        line-height: 16px;
+        text-align: center;
+        padding-left: 1rem;
+        word-spacing: 2px;
+        color: rgb(237, 207, 207);
+      }
+      /* SubHeading */
+      h3.text-xl{
+        margin-right: -23rem;
+        padding-left: 3rem;
+        margin-bottom: 8px; 
+        font-size: 20px!important;
+      }
+      /* Form */
+      input.p-3{
+        margin-right: -15rem;
+        margin-left: 1rem;
+        border: solid 2px #6F5CFF;
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding: 8px;
+      } 
+      /* Button */
+      button.py-2{
+        position: relative;
+        left: 6rem;
+        padding: 6px 12px;
+        margin-right: -2rem;
+        font-size: 12px;
+      }
+    }
+    /* Grid Side */
+    .right-side{
+      padding-top: 10px;
+      margin-top: -1rem!important;
+      .grid.grid-cols-4{
+        /* First Box */
+        .bg-gray-300.border-yellow-300{
+          width: 95px;
+          height: 140px;
+          position: relative;
+          left: -1.4rem;
+        }
+        .bg-gray-300.border-yellow-300:hover{
+          z-index: 50;
+          rotate: 4deg;
+        }
+        /* Second Box */
+        .bg-gray-300.border-emerald-300{
+          z-index: 20;
+          width: 80px;
+          height: 100px;
+          position: relative;
+          left: 25px; 
+          img.object-cover.w-full.h-full.rounded-sm{
+            object-position: 180% 30%!important;
+          }
+        }
+        .bg-gray-300.border-emerald-300:hover{
+          z-index: 50;
+        }
+        /* Third Box */
+        .bg-gray-300.border-red-300{
+          z-index: 40;
+          position: relative;
+          width: 100px;
+          height: 120px;
+          left: 3rem;
+        }
+        .bg-gray-300.border-red-300:hover{
+          z-index: 70;
+        }
+        /* Fourth Box */
+        .bg-gray-300.border-purple-400{
+          z-index: 47;
+          position: relative;
+          width: 100px;
+          height: 150px;
+          left: 5rem;
+        }
+        /* Fifth Box */
+        .bg-gray-300.border-pink-700{
+          z-index: 20;
+          position: relative;
+          height: 180px;
+          width: 120px;
+          left: -1.3rem;
+          top: -1.5rem;
+        }
+        .bg-gray-300.border-pink-700:hover{
+          z-index: 70;
+        }
+        /* Sixth Box */
+        .bg-gray-300.border-cyan-500{
+          z-index: 25;
+          position: relative;
+          width: 190px;
+          height: 120px;
+          top: -4rem;
+          left: 1rem;
+        }
+        .bg-gray-300.border-cyan-500:hover{
+          z-index: 60;
+          transform: scale(1.2)
+        }
+        /* Seventh Box */
+        .bg-gray-300.border-yellow-600{
+          z-index: 10;
+          position: relative;
+          left: 4.5rem;
+          width: 110px;
+          height: 160px;
+          top: -1rem;
+          rotate: 2deg;
+        }
+        .bg-gray-300.border-yellow-600:hover{
+          z-index: 75;
+        }
+        /* Eight Box */
+        .bg-gray-300.border-purple-600{
+          z-index: 20;
+          position: relative;
+          top: -5rem;
+          left: 1rem;
+          height: 100px;
+          width: 180px;
+          z-index: 45;
+        }
+      }
+    }    
+  }
 }
+/* IPHONE 12/12 PRO - 13/13 PRO- Google Pixel 5 */
+@media(390px <= width <= 410px ){
+   /* Navbar Section */
+   nav{
+    padding-top: 1rem!important;
+    margin-bottom: 0;
+    padding-bottom: 0!important;
+    .max-w-3lg{
+      .flex.items-center.z-50{
+        /* Brand Logo */
+        img.brand-logo{
+          height: 30px!important;
+          width: 30px!important;
+          margin-right: 0;
+          margin-left: 8px;
+        }
+        /* Brand Name */
+        span.brand-name{
+          font-size: medium;
+          display: none;
+        }
+      }
+      /* Navlinks */
+      div.flex-grow{
+        justify-content: space-evenly;
+        margin: 8px;
+        a.font-medium{
+          font-size: 10px!important;
+        }
+        a.font-medium:hover{
+          font-size: 12.5px!important;
+        }
+        .font-medium:focus{
+          font-size: 12.5px;
+
+        }
+      }
+      div.flex.items-center.space-x-4.z-50{
+        margin-right: 10px;   
+        button{
+          padding: 0px 7px;
+          font-size: 10px;
+        }
+        button.sig-in{
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+  /* Hero Section */
+  #hero{
+    #gradientTwo{
+      .gradient-background{
+        top: 5.5rem!important;
+        width: 600px;
+        height: 845px;
+      }
+    }
+    /* CopyWrite */
+    .left-side{
+      position: absolute;
+      margin-top: 20rem;
+      /* Title */
+      h1.text-left{
+        margin-right: -16rem;
+        padding-left: 3px;
+        text-align: center;
+        font-weight: 800;
+        font-size: 35px;
+        .text-red-500{
+          color: rgb(74, 74, 211);
+        }
+      }
+      /* SubTitle */
+      h2.text-xl{
+        margin-right: -14rem;
+        margin-bottom: 15px;
+        font-size: 15px!important;
+        line-height: 16px;
+        text-align: center;
+        padding-left: 1rem;
+        word-spacing: 2px;
+        color: rgb(237, 207, 207);
+      }
+      /* SubHeading */
+      h3.text-xl{
+        margin-right: -23rem;
+        padding-left: 3rem;
+        margin-bottom: 8px; 
+        font-size: 20px!important;
+      }
+      /* Form */
+      input.p-3{
+        margin-right: -15rem;
+        margin-left: 1rem;
+        border: solid 2px #6F5CFF;
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding: 8px;
+      } 
+      /* Button */
+      button.py-2{
+        position: relative;
+        left: 6rem;
+        padding: 6px 12px;
+        margin-right: -2rem;
+        font-size: 12px;
+      }
+    }
+    /* Grid Side */
+    .right-side{
+      padding-top: 2rem;
+      margin-top: -1rem!important;
+      .grid.grid-cols-4{
+        /* First Box */
+        .bg-gray-300.border-yellow-300{
+          width: 95px;
+          height: 140px;
+          position: relative;
+          left: -1.4rem;
+        }
+        .bg-gray-300.border-yellow-300:hover{
+          z-index: 50;
+          rotate: 4deg;
+        }
+        /* Second Box */
+        .bg-gray-300.border-emerald-300{
+          z-index: 20;
+          width: 80px;
+          height: 100px;
+          position: relative;
+          left: 25px; 
+          img.object-cover.w-full.h-full.rounded-sm{
+            object-position: 180% 30%!important;
+          }
+        }
+        .bg-gray-300.border-emerald-300:hover{
+          z-index: 50;
+        }
+        /* Third Box */
+        .bg-gray-300.border-red-300{
+          z-index: 40;
+          position: relative;
+          width: 100px;
+          height: 120px;
+          left: 3rem;
+        }
+        .bg-gray-300.border-red-300:hover{
+          z-index: 70;
+        }
+        /* Fourth Box */
+        .bg-gray-300.border-purple-400{
+          z-index: 47;
+          position: relative;
+          width: 100px;
+          height: 150px;
+          left: 5rem;
+        }
+        /* Fifth Box */
+        .bg-gray-300.border-pink-700{
+          z-index: 20;
+          position: relative;
+          height: 180px;
+          width: 120px;
+          left: -1.3rem;
+          top: -1.5rem;
+        }
+        .bg-gray-300.border-pink-700:hover{
+          z-index: 70;
+        }
+        /* Sixth Box */
+        .bg-gray-300.border-cyan-500{
+          z-index: 25;
+          position: relative;
+          width: 190px;
+          height: 120px;
+          top: -4rem;
+          left: 1rem;
+        }
+        .bg-gray-300.border-cyan-500:hover{
+          z-index: 60;
+          transform: scale(1.2)
+        }
+        /* Seventh Box */
+        .bg-gray-300.border-yellow-600{
+          z-index: 10;
+          position: relative;
+          left: 4.5rem;
+          width: 110px;
+          height: 160px;
+          top: -1rem;
+          rotate: 2deg;
+        }
+        .bg-gray-300.border-yellow-600:hover{
+          z-index: 75;
+        }
+        /* Eight Box */
+        .bg-gray-300.border-purple-600{
+          z-index: 20;
+          position: relative;
+          top: -5rem;
+          left: 1rem;
+          height: 100px;
+          width: 180px;
+          z-index: 45;
+        }
+      }
+    }    
+  }
 }
-/* IPHONE 13 - 16 PRO MAX */
-@media(427px <= width <= 450px){
-  /* Navbar */
+/* IPHONE 1- 16 PRO MAX */
+@media(412px <= width <= 440px){
+  /* Navbar Section */
   nav{
     margin-bottom: 0;
     padding-bottom: 0!important;
@@ -207,8 +738,8 @@ nav {
       .flex.items-center.z-50{
         /* Brand Logo */
         img.brand-logo{
-          height: 40px!important;
-          width: 40px!important;
+          height: 30px!important;
+          width: 30px!important;
           margin-right: 2px;
           margin-left: 10px;
         }
@@ -223,14 +754,13 @@ nav {
         justify-content: space-evenly;
         margin: 10px;
         a.font-medium{
-          font-size: 12px!important;
+          font-size: 11.5px!important;
         }
         a.font-medium:hover{
-          font-size: 13.5px!important;
+          font-size: 12.5px!important;
         }
         .font-medium:focus{
-          font-size: 13.5px;
-
+          font-size: 12.5px;
         }
       }
       div.flex.items-center.space-x-4.z-50{
@@ -245,7 +775,7 @@ nav {
       }
     }
   }
-  /* HERO SECTION */
+  /* Hero Section */
   #hero{
     #gradientTwo{
       .gradient-background{
