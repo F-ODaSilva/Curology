@@ -41,7 +41,7 @@ const Hero = () => {
           placeholder="Enter your password"
           className="p-3 mb-4 border border-gray-300 rounded-3xl focus:outline-none focus:ring-2 focus:ring-indigo-500"
         />
-        <button className="py-2 px-4 bg-gradient-to-r from-sky-600 to-indigo-900 hover:bg-gradient-to-r hover:from-sky-500 hover:to-indigo-700 text-white rounded-md transition duration-300 font-medium">
+        <button className="py-2 px-4 bg-gradient-to-r from-sky-600 to-indigo-900 hover:bg-gradient-to-r hover:from-sky-500 hover:to-indigo-700 text-white rounded-md transition duration-300 font-medium ">
           Sign In
         </button>
       </div>
