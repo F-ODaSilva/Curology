@@ -11,8 +11,19 @@ import Reviews from "./components/Reviews.jsx";
 import Faq from "./components/Faq.jsx";
 import Footer from "./components/Footer.jsx";
 import BagDrawer from "./components/BagDrawer.jsx";
+import Spotlight from "./components/Spotlight.jsx";
+import StickyCta from "./components/StickyCta.jsx";
+import { useEffect } from "react";
 
 export default function App() {
+  // Soft reveal for section heads and cards as they enter the viewport.
+  useEffect(() => {
+    if (matchMedia("(prefers-reduced-motion: reduce)").matches || !("IntersectionObserver" in window)) return;
+    const els = document.querySelectorAll(".band .head, .about-row, .ocard, .rev, .how-steps li, .faq-list > *, .about-commit, .cta-band");
+    const io = new IntersectionObserver((list) => list.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
+    els.forEach((el, k) => { el.classList.add("reveal"); el.style.setProperty("--d", `${(k % 4) * 70}ms`); io.observe(el); });
+    return () => io.disconnect();
+  }, []);
   return (
     <BagProvider>
       <Nav />
@@ -21,6 +32,7 @@ export default function App() {
         <About />
         <Lineup />
         <Routine />
+        <Spotlight />
         <Shop />
         <Results />
         <How />
@@ -29,6 +41,7 @@ export default function App() {
       </main>
       <Footer />
       <BagDrawer />
+      <StickyCta />
     </BagProvider>
   );
 }
