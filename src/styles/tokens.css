@@ -1,0 +1,41 @@
+/* =========================================================
+   Curology — design tokens
+   Layout: the original Curology look (Coiny headings, colourful
+   tilted photo bento, purple-pink-yellow glow, sky-indigo buttons)
+   with the products staged large on soft lavender.
+   ========================================================= */
+:root {
+  --bg: #f6f5fb;          /* lavender white */
+  --surface: #ffffff;
+  --lilac: #e9e5fd;       /* product stage */
+  --ink: #1d1d44;         /* Curology navy (from the original brand name) */
+  --ink-2: #5a5a82;
+  --ink-3: #9393b5;
+  --violet: #6f5cff;      /* original hover violet */
+  --violet-deep: #4f46e5;
+  --indigo-100: #e0e7ff;  /* original product card panel */
+  --indigo-500: #6366f1;
+  --grad-btn: linear-gradient(to right, #0284c7, #312e81);      /* original sky-600 → indigo-900 */
+  --grad-btn-hi: linear-gradient(to right, #0ea5e9, #4338ca);   /* sky-500 → indigo-700 */
+  --blob: linear-gradient(to bottom right, #7e22ce, #be185d, #facc15); /* purple-700 → pink-700 → yellow-400 */
+  --blob-2: linear-gradient(52deg, #23afcf 2%, #7618be 80%, #b9d615);
+  --peach: #f4d6c6;       /* skin warmth, used sparingly */
+  --line: rgba(29, 29, 68, .10);
+
+  --display: "Coiny", "Arial Rounded MT Bold", "Segoe UI", sans-serif;   /* original headings & brand */
+  --nav-font: "Poiret One", "Century Gothic", sans-serif;               /* original nav links */
+  --body: "Hanken Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --fs-hero: clamp(2.8rem, 7.2vw, 6.4rem);
+  --fs-1: clamp(2.1rem, 4.6vw, 3.9rem);
+  --fs-2: clamp(1.6rem, 2.8vw, 2.4rem);
+  --fs-body: 1.0625rem;
+
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  --wrap: 1240px;
+  --r-m: 22px;
+  --r-l: 34px;
+  --ease: cubic-bezier(.2, .8, .2, 1);
+  --nav-h: 72px;
+  color-scheme: light;
+}
